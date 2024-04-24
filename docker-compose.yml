@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   app:
     build: .
@@ -6,12 +7,19 @@ services:
       - ./plots:/usr/src/app/plots
     depends_on:
       - db
+    environment:
+      WEATHER_API_KEY: ${WEATHER_API_KEY}
+      WEATHER_BASE_URL: ${WEATHER_BASE_URL}
+      USER_BASE_URL: ${USER_BASE_URL}
+
   db:
     image: postgres
     environment:
-      POSTGRES_DB: salesdb
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: salesdata
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Moudgil1982#
+    ports:
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
