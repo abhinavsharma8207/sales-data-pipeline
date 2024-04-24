@@ -44,11 +44,7 @@ sales-data-pipeline/
 - Ensure PostgreSQL is running.
 - Create a database and user as specified in your `.env` file.
 
-4. Configure your `.env` file:
-- Copy the `.env.example` to `.env`.
-- Update the environment variables in `.env` according to your setup.
-
-5. Run the application:
+4. Run the application:
    python src/init.py
 
 ### With Docker
