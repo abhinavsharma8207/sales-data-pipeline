@@ -77,8 +77,7 @@ The data pipeline performs several key transformations:
 - **name** (String): Customer's name.
 - **username** (String): Customer's username.
 - **email** (String): Customer's email address.
-- **lat** (Float): Latitude of the customer's location.
-- **lon** (Float): Longitude of the customer's location.
+
 
 #### `Sale`
 - **id** (Integer): Primary key, unique sale transaction ID.
@@ -87,6 +86,8 @@ The data pipeline performs several key transformations:
 - **product_id** (Integer): Product involved in the sale.
 - **quantity** (Integer): Quantity of the product sold.
 - **price** (Float): Price per unit of the product.
+- **lat** (Float): Latitude of the sale's location.
+- **lon** (Float): Longitude of the sale's location.
 
 #### `SaleWeather`
 - **order_id** (Integer): Primary key, unique sale transaction ID, links to `Sale.id`.
