@@ -3,7 +3,6 @@ from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey
 
 Base = declarative_base()
 
-
 class Customer(Base):
     __tablename__ = 'customer'
     id = Column(Integer, primary_key=True)
