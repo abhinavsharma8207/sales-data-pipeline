@@ -64,7 +64,7 @@ This command starts all necessary services, including the PostgreSQL database an
 
 ## Data Transformation Steps
 The data pipeline performs several key transformations:
-- **Sales Data Fetching:**  Sales data is fetched from sales_data.csv file which include order_id, customer_id, price, lat and lon details 
+- **Sales Data Fetching:**  Sales data is fetched from sales_data.csv file which include order_id,customer_id,product_id,quantity,price,order_date,lat,lon details 
 - **User Data Fetching:** User data is fetched from the JSONPlaceholder API. Fields such as user ID, name, and username are extracted.
 - **Weather Data Integration:** For each sale, weather data is fetched based on the order location using the OpenWeatherMap API. Relevant weather details are included in the sales data.
 - **Sales Data Processing:** Sales data is merged with the user data based on customer_id and the weather data based on order_id.
