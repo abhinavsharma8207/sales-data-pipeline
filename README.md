@@ -71,7 +71,7 @@ The data pipeline performs several key transformations:
 
 ### Assumptions
 - All external API data matches with our sales data based on user ID and dates.
-- The weather API provides accurate and timely weather data for the given locations.
+- The weather API provides accurate and timely weather data for the given sale locations.
 
 ## Database Schema
 The transformed data is stored in three main tables:
